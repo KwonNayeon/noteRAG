@@ -1,0 +1,33 @@
+{
+  "title": "Schrödinger's Cat Thought Experiment",
+  "topic": "Quantum Mechanics",
+  "keywords": [
+    "Schrödinger's Cat",
+    " superposition",
+    " quantum mechanics",
+    " observation",
+    " reality"
+  ],
+  "high_level": [
+    "1. Schrödinger's Cat is a thought experiment that illustrates the strange principles of quantum mechanics, specifically the concept of superposition.",
+    "2. In the experiment, a cat is placed in a box with a radioactive atom and poison gas, and its state of being alive or dead is determined by the decay of the atom.",
+    "3. The experiment challenges the idea that particles have definite states until they are observed, and raises philosophical questions about reality and the nature of existence."
+  ],
+  "expanded": [
+    [
+      "1.1 Schrödinger's Cat is a thought experiment that helps us understand how strange quantum mechanics can be.",
+      "1.2 It shows that particles can exist in multiple states at the same time, like being both alive and dead.",
+      "1.3 This experiment helps scientists study the mysterious world of quantum mechanics."
+    ],
+    [
+      "2.1 In the experiment, a cat is put in a box with a radioactive atom and poison gas.",
+      "2.2 Whether the cat is alive or dead depends on whether the atom decays or not.",
+      "2.3 This experiment helps us understand how the behavior of tiny particles can affect larger objects like cats."
+    ],
+    [
+      "3.1 Schrödinger's Cat challenges the idea that particles have definite states until they are observed.",
+      "3.2 It makes us question whether reality is determined by our observations or if it exists independently.",
+      "3.3 This experiment raises philosophical questions about what it means to exist and the nature of reality."
+    ]
+  ]
+}
