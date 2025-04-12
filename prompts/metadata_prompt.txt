@@ -1,0 +1,12 @@
+From the following text, extract:
+1. A simple and short summary title (under 10 words)
+2. The main topic of the text (1–3 words)
+3. 3 to 5 relevant keywords
+
+TEXT:
+{text}
+
+OUTPUT:
+Title: 
+Topic: 
+Keywords:
