@@ -18,6 +18,20 @@ struct SummaryView: View {
         VStack {
             HStack {
                 Spacer()
+                Button {
+                    
+                } label: {
+                    ZStack {
+                        Circle()
+                            .foregroundStyle(Color(.FCE_8_B_0))
+                            .frame(width: 50)
+                            .padding(.vertical, 24)
+                        
+                        Image(systemName: "house")
+                            .font(.title2)
+                    }
+                }
+                
                 Circle()
                     .foregroundStyle(Color(.FFD_666))
                     .frame(width: 50)
@@ -122,7 +136,7 @@ struct SummaryView: View {
                                         Image(imageNames[i])
                                             .resizable()
                                             .frame(width: 34, height: 50)
-                                        Text(summary.expanded[3 * keynum + i])
+                                        Text(summary.expanded[keynum][i])
                                             .foregroundStyle(.black)
                                         Spacer()
                                     }
@@ -158,5 +172,5 @@ struct SummaryView: View {
 }
 
 #Preview {
-    SummaryView(summary: Summary(id: 1, title: "title", subtitle: "subsub", keywords: ["one", "two", "Three"], highLevel: ["Hi my name is one", "two is my second name", "Third Three haha"], expanded: ["III one", "222 two", "33 three", "III one", "222 two", "33 three", "III one", "222 two", "33 three"]))
+    SummaryView(summary: Summary(id: 1, title: "title", subtitle: "subsub", keywords: ["one", "two", "Three"], highLevel: ["Hi my name is one", "two is my second name", "Third Three haha"], expanded: [["III one", "222 two", "33 three"], ["III one", "222 two", "33 three"], ["III one", "222 two", "33 three"]]))
 }

@@ -10,9 +10,10 @@ import SwiftUI
 struct DetailView: View {
     @State private var showingImporter = false
     @State private var pdfData: Data?
-    @State private var summary: Summary = Summary(id: 0, title: "", subtitle: "", keywords: [], highLevel: [], expanded: [])
+    @State private var summary: Summary = Summary(id: 0, title: "", subtitle: "", keywords: [], highLevel: [], expanded: [[]])
     @State private var isLoading = false
     @State private var navigateToSummary = false
+    @StateObject private var parsingManager = ParsingManager()
     
     var body: some View {
         VStack {
@@ -118,10 +119,15 @@ struct DetailView: View {
         isLoading = true
         defer { isLoading = false }
         
-        guard let url = URL(string: "http://<YOUR-SERVER>/api/simplify_pdf") else {
+        guard let url = URL(string: "http://10.10.5.198:8000/api/simplify_pdf") else {
             print("❌ Wrong URL")
             return
         }
+//        guard let url = URL(string: "http://10.10.5.198:8000") else {
+//            print("❌ Wrong URL")
+//            return
+//        }
+
 
         var req = URLRequest(url: url)
         req.httpMethod = "POST"
@@ -140,26 +146,13 @@ struct DetailView: View {
         do {
             let (data, _) = try await URLSession.shared.upload(for: req, from: body)
             // Decode your JSON response however you defined it:
-            let resp = try JSONDecoder().decode(ResponsePayload.self, from: data)
-            // For simplicity, assume it has a single summary string:
-            summary.title = resp.summaries.first?.highLevel.joined(separator: "\n") ?? ""
+//            let resp = try JSONDecoder().decode(ResponsePayload.self, from: data)
+//            // For simplicity, assume it has a single summary string:
+//            summary.title = resp.summaries.first?.highLevel.joined(separator: "\n") ?? ""
+            summary = parsingManager.parseSummaryData(from: data) ?? Summary(id: 0, title: "", subtitle: "", keywords: [], highLevel: [], expanded: [[]])
             navigateToSummary = true
         } catch {
             summary.title = "Error: \(error.localizedDescription)"
         }
     }
-}
-
-// 6. Your Codable response models
-struct Summary: Identifiable, Codable {
-    var id: Int
-    var title: String
-    var subtitle: String
-    var keywords: [String]
-    var highLevel: [String]
-    var expanded: [String]
-}
-
-struct ResponsePayload: Codable {
-    let summaries: [Summary]
 }
