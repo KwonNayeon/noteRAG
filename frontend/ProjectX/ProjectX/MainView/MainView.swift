@@ -14,7 +14,7 @@ struct MainView: View {
                 .background(Color(.FFF_7_E_2))
                 } detail: {
                     DetailView()
-                        .padding(70)
+                        .padding(40)
                 }
     }
 }

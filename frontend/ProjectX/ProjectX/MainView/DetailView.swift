@@ -10,16 +10,12 @@ import SwiftUI
 struct DetailView: View {
     @State private var showingImporter = false
     @State private var pdfData: Data?
-    
-    // 2. State for the AI response
     @State private var summary: Summary = Summary(id: 0, title: "", subtitle: "", keywords: [], highLevel: [], expanded: [])
     @State private var isLoading = false
-    
     @State private var navigateToSummary = false
     
     var body: some View {
         VStack {
-            // Welcome User
             HStack {
                 Spacer()
                 VStack {
@@ -39,10 +35,13 @@ struct DetailView: View {
                     .foregroundStyle(Color(.FF_6_E_00))
                     .frame(width: 50)
             }
+            .padding(.bottom, 70)
             
-            Spacer()
+            Image("logo")
+                .resizable()
+                .frame(width: 189, height: 193)
+                .padding(.bottom, 50)
             
-            // File Upload
             HStack {
                 Text("Wanna")
                     .bold()
@@ -93,7 +92,7 @@ struct DetailView: View {
                     print("Import failed:", err)
                 }
             }
-            // 4. Show loading / result
+            
             if isLoading {
                 ProgressView("Summarizing…")
             } else if !summary.title.isEmpty {
@@ -114,7 +113,6 @@ struct DetailView: View {
         
     }
     
-    // 5. The uploadPDF function you already have
     func uploadPDF() async {
         guard let pdfData = pdfData else { return }
         isLoading = true

@@ -17,7 +17,7 @@ struct Sidebar: View {
         VStack {
             Text("Summary docs")
                 .font(.system(size: 29, weight: .bold))
-            
+             
             Rectangle()
                 .frame(width: 225, height: 1)
                 .foregroundStyle(.black)
