@@ -2,7 +2,7 @@
 
 <div align="center">
   
-![noteRAG Logo](./assets/logo.png)
+<img src="./assets/logo.png" alt="noteRAG Logo" width="200" height="200">
 
 **AI-Powered Multisensory Summarization for Cognitive-Friendly Learning**
 
