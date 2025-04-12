@@ -46,7 +46,7 @@ noterag/
 │   └── utils.py              # Document processing
 ├── frontend/                 # iOS application
 │   └── SwiftCode/            # Swift implementation
-├── notebooks/                # Development notebooks
+├── scripts/                # Development scripts
 ├── data/                     # Sample documents
 ├── prompts/                  # Prompt templates
 ├── README.md
