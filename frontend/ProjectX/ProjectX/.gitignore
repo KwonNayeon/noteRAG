@@ -1,3 +1,4 @@
-# Xcode user data (safe to ignore)
+# Xcode user data - 개인 설정
+xcuserdata/
 *.xcuserdatad/
-
+*.xcuserstate
