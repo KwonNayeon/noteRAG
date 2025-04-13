@@ -1,0 +1,73 @@
+Feature List – Multisensory Story-Based Summarization
+
+1. Multi-source Reference Input
+Upload research papers, articles, or past notes as raw input. Past user notes are used to customize summary tone and complexity. Each document is interpreted as a knowledge unit with narrative potential.
+
+2. 3-Line AI Story Summarization
+Every document is distilled into a 3-sentence mini-story "What happened → Why it matters → What's next" format. AI adapts structure and tone based on user profile. Emphasizes flow, causality, and meaning, not just bullet points.
+
+3. Visualized Understanding
+Each summary is paired with a dynamic visual: Timeline, flowchart, concept map, or abstract metaphor. AI selects the most effective visual form per content type. Visuals reinforce comprehension through pattern and structure recognition.
+
+4. Sound-Aided Learning Layer
+Sound effects enhance the summary rhythm: Chimes for key ideas, transitions for section shifts, ambient tones for mood. Multisensory delivery boosts retention through auditory encoding.
+
+5. Interactive Feedback & Micro-Rewards
+Progress is communicated through: Color cues (e.g., completed step = color change), Vibration or haptics for important concepts, Audio cues (level-up sounds, subtle celebration tones). Boosts learning motivation via dopaminergic feedback cycles.
+
+6. Navigable Summary Dashboard
+Users explore summaries through a Notion-like database interface. Each row expands to show story, visual, and audio layers. A main dashboard aggregates insights in mind map, timeline, or concept clusters.
+
+7. Personalized, Evolving Content Engine
+The system learns from each interaction to improve future summaries. Adjusts complexity, length, format, and pacing based on engagement patterns. Enables long-term knowledge scaffolding, not just fast skimming.
+
+Quick Summary for Your Slide:
+"Users experience a 3-part summary—text, visual, and sound—structured like a mini story. They interact through a familiar, Notion-style interface that makes summaries browsable and expandable. The system reduces repetition and improves understanding through story-based, multisensory learning."
+
+Proposal: AI-Powered Simplification & Cognitive-Friendly Learning Tool
+Our Product Vision
+We're building an AI-based tool that transforms dense and technical content into clear, simplified, and visual knowledge. While originally built for university students, our direction is now expanding to include users with cognitive disabilities—and generally, anyone looking to grasp complex topics more intuitively.
+
+Core Feature: 3-Line AI Summary + Visualization
+Every reference document (e.g., research paper, article, notes) is automatically processed into: A 3-line AI-generated summary and a visual representation such as a timeline, concept map, or flow diagram. This supports quick comprehension and is especially effective for users with limited working memory or attention challenges.
+
+How AI Enhances Cognitive Learning
+Unlike traditional summarizers, our AI is designed to adapt dynamically based on: The user's prior notes and preferences, to match voice and structure, and the user's cognitive profile, adjusting for reading level and pacing.
+
+Example AI Functions and Their Cognitive Benefits:
+- 3-line summary: Reduces cognitive load and supports prefrontal processing
+- Visual metaphor generation: Engages spatial reasoning (temporal-parietal activation)
+- Adaptive language simplification: Matches user comprehension level
+- Multimodal delivery (text/audio/visual): Enhances encoding and recall through diverse input channels
+- Gamified feedback (animations/sounds): Activates reward pathways and supports memory consolidation
+
+Cognitive Science-Backed Learning Strategy
+1. Step-Based Task Breakdown
+Complex content is broken into 3–5 logical steps. Each step provides multisensory feedback (e.g., color changes, sound, haptic vibration). Progress is shown via visual markers to create a sense of achievement. Inspired by gamified models like Hopscotch Math.
+
+2. Multisensory Integration
+Summaries paired with visual metaphors (e.g., time-based timeline or concept maps). Synchronized audio narration and animated highlights to improve comprehension. Optional tactile interaction (vibration feedback) for important concept transitions.
+
+3. Teaching Abstract Concepts with Concrete Analogies
+Use intuitive analogies to explain difficult subjects: Quantum superposition = "a marble in multiple boxes", F = ma = "forces distributed across a building structure". Use 3D simulations or switchable views (e.g., wave/particle mode in physics).
+
+4. Neuroplasticity-Based Design
+Encourage 25-minute focused learning + 5-minute rest cycles. Provide adaptive difficulty scaling in content presentation. Trigger dopaminergic reward (e.g., visual fireworks, sound chimes) when learning goals are met.
+
+Key UX Features for Accessibility
+- Clickable summary table: One-click access to 3-line summaries, supports chunked processing, reduces overload
+- Visual dashboard (mind map): Overview of all summaries via topic mapping, encourages conceptual connection & overview
+- Sensory progress feedback: Color/vibration/audio per step completion, triggers reward system (dopamine, satisfaction)
+- Shallow navigation: Limit to 3-layer menu depth, matches short-term memory span limitations
+
+Dynamic Learning Flow
+Input: User provides document and optional profile (past notes, preferences). AI Summarization: 3-line summary + visual + optional audio output. User Interaction: Via list/table view, mind map, or progressive popup. Follow-up: Option to view full-length summary or linked resources.
+
+Why This Works
+Supported by neuroscience and education research: Summarization + visual tools improve memory retention and recall. Short-form content lowers cognitive burden (3-line model). Multisensory interaction expands information accessibility. Reward-based interaction boosts motivation and user engagement.
+
+Open Questions for the Team
+With this direction in mind, do we believe our current MVP scope can accommodate these cognitive-friendly features? Which features (e.g., summary table, adaptive visuals, feedback effects) should we prototype first for usability and value testing?
+
+TL;DR Summary
+3-line AI summary + visual output remains the core. Enhanced with brain-friendly learning mechanisms. Adapts content to each user's cognitive needs. Gamified and sensory-rich feedback loops reinforce understanding. Accessible to everyone—from students to neurodiverse learners.

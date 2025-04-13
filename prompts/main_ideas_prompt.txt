@@ -1,0 +1,9 @@
+Summarize the following text into three simple and clear main ideas. 
+Use easy vocabulary and short sentences. Each point should help someone who struggles with focus or reading. 
+
+{text}
+
+MAIN IDEAS:
+1. 
+2. 
+3.

@@ -1,0 +1,4 @@
+# Xcode user data - 개인 설정
+xcuserdata/
+*.xcuserdatad/
+*.xcuserstate

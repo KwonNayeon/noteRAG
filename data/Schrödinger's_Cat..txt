@@ -1,0 +1,11 @@
+Schrödinger's Cat is a famous thought experiment proposed by Austrian physicist Erwin Schrödinger in 1935. It was designed to illustrate the peculiar and often counterintuitive principles of quantum mechanics, particularly the concept of superposition. Schrödinger used this hypothetical scenario to question the Copenhagen interpretation of quantum mechanics, which suggests that a particle can exist in multiple states simultaneously until it is observed.
+
+The thought experiment imagines a cat placed inside a sealed box along with a radioactive atom, a Geiger counter, and a vial of poison gas. The setup works as follows: if the radioactive atom decays, the Geiger counter detects it and triggers the release of poison gas, killing the cat. If the atom does not decay, the cat remains alive. According to quantum mechanics, before the box is opened and observed, the radioactive atom exists in a superposition of decayed and undecayed states. Consequently, the cat inside the box is also considered to be in a superposition of being alive and dead at the same time.
+
+This paradoxical situation arises because, in quantum mechanics, particles do not have definite states until they are measured or observed. The act of observation causes the "wave function" describing all possible states to collapse into one specific state. In this case, opening the box and observing the cat determines whether it is alive or dead.
+
+Schrödinger's Cat was not intended to be a literal experiment but rather a way to highlight how strange and unintuitive quantum mechanics can seem when applied to everyday objects. The idea of a cat being simultaneously alive and dead defies common sense and raises philosophical questions about reality, observation, and the nature of existence.
+
+Modern interpretations of Schrödinger's Cat vary. Some physicists argue that macroscopic objects like cats cannot exist in true quantum superposition because they are constantly interacting with their environment. Others use Schrödinger's Cat as a teaching tool to explain fundamental concepts in quantum mechanics without necessarily taking the scenario literally.
+
+Ultimately, Schrödinger's Cat remains one of the most famous thought experiments in physics, sparking debates not only among scientists but also philosophers and anyone interested in understanding how observation shapes reality.
