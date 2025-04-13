@@ -11,9 +11,9 @@ import SwiftUI
 struct Summary: Identifiable, Codable {
     var id: Int
     var title: String
-    var subtitle: String
+    var topic: String?
     var keywords: [String]
-    var highLevel: [String]
+    var lines: [String]
     var expanded: [[String]]
 }
 
@@ -22,19 +22,7 @@ struct ResponsePayload: Codable {
 }
 
 class ParsingManager: ObservableObject {
-    @Published var summary: Summary = Summary(id: 0, title: "", subtitle: "", keywords: [], highLevel: [], expanded: [[]])
-    
-//    func parseSummaryData(from jsonData: Data) -> Summary? {
-//        let decoder = JSONDecoder()
-//        do {
-//            print("jsonData: \(jsonData)")
-//            let summary = try decoder.decode(Summary.self, from: jsonData)
-//            return summary
-//        } catch {
-//            print("Decoding failed: \(error)")
-//            return nil
-//        }
-//    }
+    @Published var summary: Summary = Summary(id: 0, title: "", topic: "", keywords: [], lines: [], expanded: [[]])
     
     func parseSummaryData(from jsonData: Data) -> Summary? {
         let decoder = JSONDecoder()

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct Sidebar: View {
-    let folderName: [String] = ["folderName1", "folderName2", "folderName3"]
-    let summary: [String] = ["title1", "title2", "title3"]
+    let folderName: [String] = ["Bio", "Mathmetics", "Statistics"]
+    let summary: [String] = ["Project X", "Schrödinger's cat", "Global warming"]
     
     @State var isExpanded: Bool = false
     

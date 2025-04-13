@@ -10,7 +10,7 @@ import SwiftUI
 struct DetailView: View {
     @State private var showingImporter = false
     @State private var pdfData: Data?
-    @State private var summary: Summary = Summary(id: 0, title: "", subtitle: "", keywords: [], highLevel: [], expanded: [[]])
+    @State private var summary: Summary = Summary(id: 0, title: "", topic: "", keywords: [], lines: [], expanded: [[]])
     @State private var isLoading = false
     @State private var navigateToSummary = false
     @StateObject private var parsingManager = ParsingManager()
@@ -123,11 +123,6 @@ struct DetailView: View {
             print("❌ Wrong URL")
             return
         }
-//        guard let url = URL(string: "http://10.10.5.198:8000") else {
-//            print("❌ Wrong URL")
-//            return
-//        }
-
 
         var req = URLRequest(url: url)
         req.httpMethod = "POST"
@@ -135,7 +130,6 @@ struct DetailView: View {
         let boundary = UUID().uuidString
         req.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         
-        // Build the multipart body
         var body = Data()
         body.append("--\(boundary)\r\n".data(using: .utf8)!)
         body.append("Content-Disposition: form-data; name=\"file\"; filename=\"doc.pdf\"\r\n".data(using: .utf8)!)
@@ -145,11 +139,7 @@ struct DetailView: View {
         
         do {
             let (data, _) = try await URLSession.shared.upload(for: req, from: body)
-            // Decode your JSON response however you defined it:
-//            let resp = try JSONDecoder().decode(ResponsePayload.self, from: data)
-//            // For simplicity, assume it has a single summary string:
-//            summary.title = resp.summaries.first?.highLevel.joined(separator: "\n") ?? ""
-            summary = parsingManager.parseSummaryData(from: data) ?? Summary(id: 0, title: "", subtitle: "", keywords: [], highLevel: [], expanded: [[]])
+            summary = parsingManager.parseSummaryData(from: data) ?? Summary(id: 0, title: "", topic: "", keywords: [], lines: [], expanded: [[]])
             navigateToSummary = true
         } catch {
             summary.title = "Error: \(error.localizedDescription)"

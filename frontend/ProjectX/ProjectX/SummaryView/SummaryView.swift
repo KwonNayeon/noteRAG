@@ -56,12 +56,12 @@ struct SummaryView: View {
                     
                     VStack {
                         HStack {
-                            Text("Summary Title")
+                            Text("\(summary.title)")
                                 .font(.system(size: 45, weight: .bold))
                             Spacer()
                         }
                         HStack {
-                            Text("Subtopics")
+                            Text("\(summary.topic ?? "")")
                                 .font(.system(size: 35))
                             Spacer()
                         }
@@ -72,7 +72,7 @@ struct SummaryView: View {
                         }
                         
                         HStack {
-                            ForEach(0..<3){ num in
+                            ForEach(0..<min(3, summary.keywords.count), id: \.self){ num in
                                 HStack {
                                     Text("# \(summary.keywords[num])")
                                         .font(.system(size: 25))
@@ -103,14 +103,24 @@ struct SummaryView: View {
                                         Image(imageNames[index])
                                             .resizable()
                                             .frame(width: 34, height: 50)
+                                        
                                         Text(makeAttributedString(number: index))
                                             .foregroundStyle(.black)
                                             .font(.system(size: 25))
+                                            .multilineTextAlignment(.leading)
+                                            .lineLimit(nil)
+                                            .fixedSize(horizontal: false, vertical: true)
+
                                         Spacer()
                                     }
                                 }
                             }
                         }
+                        
+                        Image("shu")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 400, height: 400)
 
                         Spacer()
                     }
@@ -124,8 +134,8 @@ struct SummaryView: View {
                     
                     if isOpened {
                         VStack {
-                            Text("\"\(summary.highLevel[keynum])\"")
-                                .font(.system(size: 40, weight: .bold))
+                            Text("\"\(summary.lines[keynum])\"")
+                                .font(.system(size: 35, weight: .bold))
                                 .frame(width: 400)
                                 .multilineTextAlignment(.center)
                                 .padding(.bottom, 100)
@@ -138,22 +148,45 @@ struct SummaryView: View {
                                             .frame(width: 34, height: 50)
                                         Text(summary.expanded[keynum][i])
                                             .foregroundStyle(.black)
+                                            .multilineTextAlignment(.leading)
                                         Spacer()
                                     }
                                 }
                             }
                             .padding(.horizontal, 76)
                             
+                            Image("learning")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 400, height: 400)
+                            
                             Spacer()
                         }
                     }
-                }.frame(width: 540, height: 740)
+                }
+                .frame(width: 540, height: 740)
             }
         }
     }
     
+    func textTrimming(text: String) -> String {
+        var text = "\"\"\"Hello, World!\"\"\""
+        text = text.trimmingCharacters(in: CharacterSet(charactersIn: "\""))
+
+        if text.count >= 3 {
+            text = String(text.dropFirst(3))
+        }
+        
+        return text
+    }
+    
     func makeAttributedString(number: Int) -> AttributedString {
-        let line = summary.highLevel[number]
+        guard summary.lines.indices.contains(number),
+                  summary.keywords.indices.contains(number) else {
+                return AttributedString("")
+            }
+        
+        let line = summary.lines[number]
         let keywords = summary.keywords[number]
         
         guard let randomKeyword = keywords.randomElement().map({ String($0) }),
@@ -172,5 +205,5 @@ struct SummaryView: View {
 }
 
 #Preview {
-    SummaryView(summary: Summary(id: 1, title: "title", subtitle: "subsub", keywords: ["one", "two", "Three"], highLevel: ["Hi my name is one", "two is my second name", "Third Three haha"], expanded: [["III one", "222 two", "33 three"], ["III one", "222 two", "33 three"], ["III one", "222 two", "33 three"]]))
+    SummaryView(summary: Summary(id: 1, title: "title", topic: "subsub", keywords: ["onㄹㄹㄹㄹㄹㄹㄹㄹe", "tㄹㄹㄹㄹㄹㄹㄹwo", "Thrㄹㄹㄹㄹㄹㄹㄹㄹee"], lines: ["Hi bllblblblbkjflkdjkgjdlfkgjldkfjgldkfdflkgjdlkfgjkfdjglkfdjglkdjflgky name is one", "two is my second name", "Third Three haha"], expanded: [["III one", "222 two", "33 three"], ["III one", "222 two", "33 three"], ["III one", "222 two", "33 three"]]))
 }
