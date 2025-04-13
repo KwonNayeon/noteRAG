@@ -45,7 +45,7 @@ noterag/
 │   ├── rag_pipeline.py       # LangChain flow
 │   └── utils.py              # Document processing
 ├── frontend/                 # iOS application
-│   └── ProjectX/            # Swift implementation
+│   └── ProjectX/             # Swift implementation
 ├── scripts/                  # Development scripts
 ├── data/                     # Sample documents
 ├── prompts/                  # Prompt templates
