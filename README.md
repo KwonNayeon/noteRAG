@@ -1,4 +1,4 @@
-# noteRAG
+# NoteNest
 
 <div align="center">
   
@@ -16,7 +16,7 @@
 
 ## Overview
 
-noteRAG transforms complex content into accessible, cognitive-friendly summaries using RAG (Retrieval Augmented Generation). Our tool creates 3-line summaries for users with diverse cognitive needs, particularly those with reading or focus difficulties, with optional expandable details for each line.
+NoteNest transforms complex content into accessible, cognitive-friendly summaries using RAG (Retrieval Augmented Generation). Our tool creates 3-line summaries for users with diverse cognitive needs, particularly those with reading or focus difficulties, with optional expandable details for each line.
 
 ### Key Features
 - **3-Line AI Summaries**: Concise summary of three key points from complex documents
@@ -27,7 +27,7 @@ noteRAG transforms complex content into accessible, cognitive-friendly summaries
 
 ## Problem & Solution
 
-Many individuals with cognitive disabilities struggle with dense content. Traditional summarizers focus on condensing information without considering cognitive accessibility. noteRAG bridges this gap with summaries designed using cognitive science principles, making learning more accessible and engaging.
+Many individuals with cognitive disabilities struggle with dense content. Traditional summarizers focus on condensing information without considering cognitive accessibility. NoteNest bridges this gap with summaries designed using cognitive science principles, making learning more accessible and engaging.
 
 ## Technical Overview
 
@@ -45,7 +45,7 @@ noterag/
 │   ├── rag_pipeline.py       # LangChain flow
 │   └── utils.py              # Document processing
 ├── frontend/                 # iOS application
-│   └── ProjectX/            # Swift implementation
+│   └── ProjectX/             # Swift implementation
 ├── scripts/                  # Development scripts
 ├── data/                     # Sample documents
 ├── prompts/                  # Prompt templates
