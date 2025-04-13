@@ -1,5 +1,20 @@
+<<<<<<< HEAD
+fastapi
+uvicorn[standard]
+langchain-openai
+openai
+pypdf
+python-multipart
+langchain
+langchain-community
+requests
+
+
+
+=======
 reportlab==4.0.4
 langchain==0.0.285
 langchain-openai==0.0.2
 openai==1.3.5
 python-dotenv==1.0.0
+>>>>>>> 3ff61729b2489f38de7c39cb35c674315b526ddc
