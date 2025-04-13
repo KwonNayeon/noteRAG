@@ -43,7 +43,7 @@ noterag/
 ├── backend/                  # Python RAG processing
 │   ├── api.py                # API routes
 │   ├── rag_pipeline.py       # LangChain flow
-│   └── test_api.py           # Document processing
+│   └── test_api.py           # For test
 ├── frontend/                 # iOS application
 │   └── ProjectX/             # Swift implementation
 ├── scripts/                  # Development scripts
