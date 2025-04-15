@@ -57,7 +57,7 @@ noterag/
 
 ```bash
 # Clone & install
-git clone https://github.com/yourusername/noteRAG.git
+git clone https://github.com/kwonnayeon/noteRAG.git
 cd noteRAG
 pip install -r requirements.txt
 
