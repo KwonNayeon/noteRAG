@@ -69,7 +69,7 @@ cd backend
 python api.py
 
 # For iOS frontend
-cd ../frontend/SwiftCode
+cd ../frontend/ProjectX
 open noteRAG.xcodeproj
 ```
 
