@@ -1,5 +1,7 @@
 # NoteNest
 
+*[한국어](README.ko.md) | English*
+
 <div align="center">
   
 <img src="./assets/logo.png" alt="noteRAG Logo" width="200" height="200">
