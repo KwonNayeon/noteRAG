@@ -1,6 +1,6 @@
 # NoteNest
 
-*[한국어](README.ko.md) | English*
+*English | [한국어](README.ko.md)*
 
 <div align="center">
   
